@@ -1,0 +1,48 @@
+.my-button {
+
+    padding: 0px 24px;
+    background: #F4E041;
+    border-radius: 80px;
+    line-height: 34px;
+    color: rgba(0, 0, 0, 0.87);
+    @include adaptiveValue("font-size", 16, 12);
+}
+
+.my-button:hover {
+    background: #ff7c1f;
+    color: white;
+    transition: 0.4s;
+}
+
+.my-button:disabled {
+    background: #B4B4B4;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+
+
+.my-button_d {
+    margin-left: 20px;
+    padding: 5px 10px;
+    background: #e66c3f;
+    border-radius: 20px;
+    line-height: 25px;
+    @media (max-width:$mobileSmall) {
+        margin-top: 10px;
+        padding: 3px 2px;
+        line-height: 15px;
+}
+    color: rgba(254, 251, 251, 0.87);
+    @include adaptiveValue("font-size", 13, 5);
+}
+
+.my-button_d:hover {
+    background: #d51c1c;
+    color: white;
+    transition: 0.4s;
+}
+
+.my-button_d:disabled {
+    background: #B4B4B4;
+    color: rgba(255, 255, 255, 0.87);
+}

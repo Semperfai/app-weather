@@ -1,0 +1,28 @@
+.app {
+	height: 100vh;
+	width: 100%;
+	padding: 100px 15px;
+	background: url('@/assets/imgs/landscape-1844227_960_720.webp') center/cover no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	&__table {
+		
+	}
+
+	&__picker {
+		display: flex;
+        @media (max-width:$mobileSmall) {
+			flex-direction: column;
+            align-items: center;
+		}
+		button {
+			margin-left: 20px;
+            @media (max-width:$mobileSmall) {
+                margin-top: 20px;
+		}
+	}
+}
+}
